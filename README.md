@@ -1,2 +1,20 @@
-# Coding-Solutions
-My solution to certain problem statement but my solution can be common as i am a human and other human can also think like me
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[100], rev[100];
+
+    printf("Enter a string: ");
+    gets(str);
+
+    strcpy(rev, str);
+    strrev(rev);
+
+    if (strcmp(str, rev) == 0)
+        printf("Palindrome");
+    else
+        printf("Not Palindrome");
+
+    return 0;
+}
